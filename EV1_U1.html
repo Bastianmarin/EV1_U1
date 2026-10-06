@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin:75px;
+        }
+        #confirmacion {
+            color: green;
+            font: 800;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registro de Usuario </h1> <br>
+    <h3>Nombre de Usuario</h3> <input type="text" id="username"> <br> <br>
+    <h3>Correo Electronico</h3> <input type="email" id="useremail" placeholder="ejemplo.ejemplar@gmail.com"> <br> <br>
+    <h3>Telefono</h3> <input type="number" id="numerotelefono" placeholder="+56 971227623"> <br> <br>
+    <h3>Rut</h3> <input type="text" id="numerorut" placeholder="10.530.123-K" required> <br> <br> 
+    <button onclick="Guardado()"> GUARDAR </button> <br> <br>    
+    <div id="confirmacion"></div>
+    <script>
+        function Guardado() {
+
+            document.getElementById('confirmacion').textContent = "Sus datos quedaron Guardados";
+        }
+    </script>
+</body>
+</html>
