@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluacion 1</title>
+    <style>
+        body{
+            text-align: center;
+            padding: 20px;
+            border-radius: 30px;
+            background-color: whitesmoke;
+        }
+        input {
+            width: 300px;
+        }
+        select {
+            width: 200px;
+        }
+        button {
+            background-color: lightgreen;
+            border-radius: 10px;
+            width: 150px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 id="TituloFormulario"> Registro de datos </h1>
+    <h3>Nombre Completo:</h3>
+    <input type="text" id="NombreCompleto" placeholder="Ej: Jorge Diaz">
+    <h3>Correo Electronico:</h3>
+    <input type="email" id="CorreoElectronico" placeholder="Ej: Jorge.Diaz321@gmail.com">
+    <br><br>
+    <label for="Carrera"> Carrera:</label>
+    <select name="Carrera" id="carrera">
+        <option value="Enfermeria"> Enfermeria</option>
+        <option value="Informatica"> Informatica</option>
+        <option value="Psicologia">Psicologia</option>
+        <option value="Marketing"> Marketing </option>
+    </select>
+    <br><br>
+   <button onclick="GuardarDatos()"> Registrar Datos</button>
+   <br><br>
+    <div class="center" id="DatosGuardados" style="color: green;"></div>
+    <script>
+        function GuardarDatos() {
+            document.getElementById('DatosGuardados').textContent = "Sus datos se guardaron exitosamente    "
+        }
+    </script>
+</body>
+</html>
